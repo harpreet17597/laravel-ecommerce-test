@@ -83,7 +83,8 @@ composer install
 ```
 
 3. **Setup environment file**
-   Update .env with your MySQL database credentials and other necessary settings.
+
+    Update .env with your MySQL database credentials and other necessary settings.
 
 ```bash
 cp .env.example .env
