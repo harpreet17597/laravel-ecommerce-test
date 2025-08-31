@@ -55,6 +55,9 @@ The project also includes seeders for initial data:
 | DELETE | `/api/user/cart/remove/{productId}`  | ❌            | Remove a product from cart            |
 | POST   | `/api/user/checkout`                 | ✅            | Place an order (cart must have items) |
 
+> All protected endpoints require **Bearer token**:  
+> `Authorization: Bearer <access_token>`
+
 > **Note:**
 >
 > -   Cart endpoints work for both **guests** (session-based) and **logged-in users** (DB-based).
