@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'NOCTADO';
+    src: url('NOCTADO.eot');
+    src: url('NOCTADO.eot?#iefix') format('embedded-opentype'),
+        url('NOCTADO.woff2') format('woff2'),
+        url('NOCTADO.woff') format('woff'),
+        url('NOCTADO.ttf') format('truetype'),
+        url('NOCTADO.svg#NOCTADO') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nautilus Pompilius';
+    src: url('NautilusPompilius.eot');
+    src: url('NautilusPompilius.eot?#iefix') format('embedded-opentype'),
+        url('NautilusPompilius.woff2') format('woff2'),
+        url('NautilusPompilius.woff') format('woff'),
+        url('NautilusPompilius.ttf') format('truetype'),
+        url('NautilusPompilius.svg#NautilusPompilius') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

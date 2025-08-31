@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://vidente.com/sitemap.xml
