@@ -10,12 +10,24 @@ use Exception;
 class UserProductController extends Controller
 {
     use ApiResponser;
+
     public function __construct() {}
 
     public function index()
     {
         try {
-            $products = Product::all();
+            $query = Product::query();
+
+            // Check if 'search' query param exists
+            if ($search = request()->query('search')) {
+                $query->where(function ($q) use ($search) {
+                    $q->where('name', 'like', "%{$search}%")
+                        ->orWhere('description', 'like', "%{$search}%");
+                });
+            }
+
+            $products = $query->get();
+
             return $this->returnSuccessResponse("All products", $products);
         } catch (Exception $exception) {
             report($exception);
