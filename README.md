@@ -83,10 +83,10 @@ composer install
 ```
 
 3. **Setup environment file**
+   Update .env with your MySQL database credentials and other necessary settings.
 
 ```bash
 cp .env.example .env
-Update .env with your MySQL database credentials and other necessary settings.
 ```
 
 4. **Run migrations**
@@ -95,18 +95,18 @@ Update .env with your MySQL database credentials and other necessary settings.
 php artisan migrate
 ```
 
-5. **Seed the database**
+5. **Seed the database**  
+   This will seed the database with an **Admin user**, a **Regular user**, and **50 sample products**.
 
 ```bash
 php artisan db:seed
-This will seed the database with an **Admin user**, a **Regular user**, and **50 sample products**.
 ```
 
-6. **Serve the application**
+6. **Serve the application**  
+   By default, the app will run on http://127.0.0.1:8000.
 
 ```bash
 php artisan serve
-By default, the app will run on http://127.0.0.1:8000.
 ```
 
 ## 📬 API Testing with Postman
